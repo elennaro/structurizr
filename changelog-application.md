@@ -2,6 +2,8 @@
 
 ## unreleased
 
+- Fixes https://github.com/structurizr/structurizr/issues/139 (Kotlin `!script` fails on Windows when running the WAR: "Unable to initialize repl compiler ... volume label syntax is incorrect").
+
 ## local
 
 - Fixes https://github.com/structurizr/structurizr/issues/137 (Local multi-workspace home page returns HTTP 500 when the data directory contains a directory starting with "-").

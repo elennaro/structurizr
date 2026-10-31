@@ -1,5 +1,6 @@
 package com.structurizr.command;
 
+import com.structurizr.Workspace;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -28,6 +29,12 @@ public class AbstractCommandTests {
         } catch (Exception e) {
             assertEquals("Workspace is software system scoped, but multiple software systems have containers and/or documentation defined.", e.getMessage());
         }
+    }
+
+    @Test
+    public void loadWorkspace_RunsKotlinScripts() throws Exception {
+        Workspace workspace = new ValidateCommand().loadWorkspace("src/test/dsl/script-kotlin.dsl");
+        assertNotNull(workspace.getModel().getPersonWithName("Kotlin"));
     }
 
 }

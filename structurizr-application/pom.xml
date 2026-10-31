@@ -144,7 +144,7 @@
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-scripting-jsr223</artifactId>
-      <version>1.9.25</version>
+      <version>${kotlin.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jruby</groupId>
@@ -377,6 +377,14 @@
             <dependency>
               <groupId>org.jetbrains.kotlin</groupId>
               <artifactId>kotlin-stdlib</artifactId>
+            </dependency>
+            <dependency>
+              <groupId>org.jetbrains.kotlin</groupId>
+              <artifactId>kotlin-script-runtime</artifactId>
+            </dependency>
+            <dependency>
+              <groupId>org.jetbrains.kotlin</groupId>
+              <artifactId>kotlin-reflect</artifactId>
             </dependency>
           </requiresUnpack>
         </configuration>
